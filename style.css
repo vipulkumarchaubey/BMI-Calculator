@@ -1,0 +1,86 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    display: flex;
+    background-color: rgb(41, 25, 58);
+    color: rgba(255, 149, 10, 0.669);
+    align-items: center;
+    justify-content: center;
+}
+
+.main_card{
+    margin-top: 10vh;
+    display: flex;
+    height: 80vh;
+    width:60vw;
+   flex-direction: column;
+   justify-content: center;
+   align-items:center ;
+   gap: 15px;
+   background-color: rgb(44, 25, 61);
+   border-radius: 15px;
+   box-shadow: 0px 0px 10px rgba(104, 8, 230, 0.8);
+    
+  
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    font-family: sans-serif;
+}
+
+
+h1{
+    font-size: 38px;
+   margin-bottom: 4vh;
+}
+
+#height{
+    font-size: 20px;
+}
+
+#weight{
+    font-size: 20px;
+}
+
+.lab{
+    font-size: 24px;
+    
+}
+
+#result{
+    gap: 8vh;
+}
+button{
+    margin-top: 15px;
+    background-color:  rgba(255, 149, 10, 0.669);
+   cursor: pointer;
+    border-radius: 8px;
+    color:    rgba(32, 30, 27, 0.669);;
+    font-size: 22px;
+     box-shadow: 0px 0px 6px rgba(230, 141, 8, 0.8);
+     transition: 0.3s;
+     font-family: sans-serif;
+     padding: 5px;
+}
+
+button:hover{
+    transform: scale(1.05); 
+   
+   
+
+}
+
+
+#result{
+    font-size: 20px ;
+}
