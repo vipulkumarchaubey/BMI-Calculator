@@ -1,6 +1,7 @@
   const result=document.querySelector("#result")
   const button=document.querySelector("button")
   const bmi_form=document.querySelector("#bmi_form")
+const bmiType=document.querySelector(".bmiType")
 
 bmi_form.addEventListener("submit", function (e) {
     e.preventDefault()  // protect from refreshing ... 
@@ -25,10 +26,25 @@ bmi_form.addEventListener("submit", function (e) {
     setTimeout(() => {
         const BMI= ((wt*10000)/(ht*ht)).toFixed(2)
         result.innerText=`BMI is ${BMI}`
+
+        if(BMI<18.5){ 
+            bmiType.innerHTML="Under Weight"
+         }
+          else if(BMI>18.5&& BMI<24.9){ 
+            bmiType.innerHTML="Healthy Weight"
+         }
+          else if(BMI>25 && BMI<29.9){ 
+            bmiType.innerHTML="Over weight"
+         }
+          else if(BMI>30){ 
+            bmiType.innerHTML="Obesity"
+         }
+
         button.innerHTML="Calculate BMI"
    }, 1200);
 
 
 })
+
 
 
