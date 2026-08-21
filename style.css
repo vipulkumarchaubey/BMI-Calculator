@@ -11,6 +11,8 @@ body{
     color: rgba(255, 149, 10, 0.669);
     align-items: center;
     justify-content: center;
+    width: 100vw;
+    height: 100vh;
 }
 
 .main_card{
@@ -29,7 +31,8 @@ body{
   
 }
 
-form{
+form{max-width: 80%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,6 +57,7 @@ h1{
 
 .lab{
     font-size: 24px;
+    max-width: 90%;
     
 }
 
@@ -84,3 +88,4 @@ button:hover{
 #result{
     font-size: 20px ;
 }
+
