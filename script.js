@@ -45,8 +45,8 @@ const ht = parseInt(heightInput.value);
           else if(BMI>30){ 
             bmiType.innerHTML="Obesity"
          }
-      weightInput.innerHTML="";
-      heightInput.innerHTML="";
+      weightInput.value="";
+      heightInput.value="";
       
 
         button.innerHTML="Calculate BMI"
