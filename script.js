@@ -8,6 +8,7 @@ const heightInput = document.querySelector("#height");
 
 bmi_form.addEventListener("submit", function (e) {
     e.preventDefault()  // protect from refreshing ... 
+   bmiType.innerHTML=""  // isse Jab user pehli baar apna BMI nikalega, toh usko "Healthy Weight" dikhega. Par jab wo dusri baar nayi values daal kar calculate dabayega, toh pichla wala "Healthy Weight" turant screen se hat jayega aur 1.2 seconds tak screen ekdum fresh "Loading..." dikhayegi. Ye ekdum professional feel deta hai.
 
 
 // 2. Button click hone par us element ke andar ki value nikal li 
@@ -24,8 +25,7 @@ const ht = parseInt(heightInput.value);
     // input correct cleaning button 
        button.innerText="Loading..."
            result.innerText=""
-         bmiType.innerHTML=""  // isse Jab user pehli baar apna BMI nikalega, toh usko "Healthy Weight" dikhega. Par jab wo dusri baar nayi values daal kar calculate dabayega, toh pichla wala "Healthy Weight" turant screen se hat jayega aur 1.2 seconds tak screen ekdum fresh "Loading..." dikhayegi. Ye ekdum professional feel deta hai.
-
+      
 
    
     // result.innerText(BMI) wrong 
