@@ -5,8 +5,14 @@ const bmiType=document.querySelector(".bmiType")
 
 bmi_form.addEventListener("submit", function (e) {
     e.preventDefault()  // protect from refreshing ... 
-    const ht = parseInt(document.querySelector("#height").value)
-    const wt = parseInt(document.querySelector("#weight").value)
+  // 1. Sirf HTML Element ko select karke save kara (taaki baad mein clear kar sake)
+const weightInput = document.querySelector("#weight"); 
+const heightInput = document.querySelector("#height");
+
+// 2. Button click hone par us element ke andar ki value nikal li 
+const wt = parseInt(weightInput.value);
+const ht = parseInt(heightInput.value);
+   
     // chkcing the input 
     if(isNaN(ht) || isNaN(wt) || ht<=0 || wt<=0){
         result.innerText="Please write positive no !"
@@ -39,6 +45,9 @@ bmi_form.addEventListener("submit", function (e) {
           else if(BMI>30){ 
             bmiType.innerHTML="Obesity"
          }
+      weightInput.innerHTML="";
+      heightInput.innerHTML="";
+      
 
         button.innerHTML="Calculate BMI"
    }, 1200);
