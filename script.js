@@ -24,6 +24,7 @@ const ht = parseInt(heightInput.value);
     // input correct cleaning button 
        button.innerText="Loading..."
            result.innerText=""
+  bmiType.innerHTML=""
 
 
    
@@ -55,6 +56,7 @@ const ht = parseInt(heightInput.value);
 
 
 })
+
 
 
 
